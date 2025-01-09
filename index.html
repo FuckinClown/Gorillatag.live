@@ -1,27 +1,74 @@
 <!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <head>
-         <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="GorillaTag.Live">
     <meta property="og:description" content="Watch your favorite Gorilla Tag creators live!">
     <meta property="og:color" content="#7289DA">
     <meta property="og:url" content="https://GorillaTag.Live/">
     <meta property="og:image" content="https://www.uploadvr.com/content/images/size/w1024/format/webp/2021/04/gorilla-tag-new-map.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Made by Fclown</title>
+    <title>GorillaTag Creators Live!</title>
 </head>
-<html>
-    <body onkeydown="dblspawn();" onclick="spawn()" onload="canRun=1;anim();flipFace();;return true;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-        <p style="text-align: center;font-size:100px;" id="words">you are an idiot</p>
-        <audio loop src="YouAreAnIdiot.mp3" id="idiot"></audio>
-        <div style="text-align: center;">
-            <img src="face1.png" width="250" height="250" id="image1">
-            <img src="face1.png" width="250" height="250" id="image2">
-            <img src="face1.png" width="250" height="250" id="image3">
-        </div>
-    </body>
+<body>
+  <!-- Agreement Page -->
+  <div id="agreement-container" class="agreement-container">
+    <h1>Cookies and User-Generated Content Agreement</h1>
+    <p>
+        GorillaTag.live uses cookies to enhance your experience and provide personalized streaming content.<p>By continuing, you agree to our Privacy Policy.</p>
+    </p>
+    <div class="buttons">
+      <button id="accept-btn">Accept</button>
+      <button id="decline-btn">Decline</button>
+    </div>
+    <label class="privacy-label">
+      By continuing to GorillaTag.live, you agree to our 
+      <a href="#" id="privacy-link">Privacy Policy</a>.
+    </label>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-container" style="display: none;">
+    <p style="text-align: center; font-size: 100px;" id="words">you are an idiot</p>
+    <audio loop src="assets/lobbyTheme.mp3" id="idiot"></audio>
+    <div style="text-align: center;">
+      <img src="assets/stock_man.png" width="250" height="250" id="image1">
+      <img src="assets/stock_man.png" width="250" height="250" id="image2">
+      <img src="assets/stock_man.png" width="250" height="250" id="image3">
+    </div>
+  </div>
+
+  <!-- Privacy Policy Modal -->
+  <div id="privacy-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Privacy Policy</h2>
+      <p>
+        Welcome to GorillaTag.live! We are committed to protecting your privacy and providing a safe platform 
+        for you to enjoy live streams of Gorilla Tag content creators. This Privacy Policy outlines how we 
+        collect, use, and share your information. By using our site, you agree to the terms outlined here.
+      </p>
+      <p>
+        <strong>Information We Collect:</strong>
+        <ul>
+          <li>Account Information: If you create an account, we collect your username, email address, and password.</li>
+          <li>Usage Data: We collect information about your interactions with the site, such as the streams you watch and your browsing habits.</li>
+          <li>Cookies: Cookies are used to enhance your experience by remembering your preferences and providing personalized content.</li>
+        </ul>
+        <strong>Sharing Your Information</strong>
+        We do not sell your personal information. Your data may be shared with third-party service providers (e.g., analytics tools) to enhance our services.
+        <strong>Your Rights</strong>
+        <ul>
+          <li>You can request access to or deletion of your personal data.</li>
+          <li>You can opt out of certain data collection practices by adjusting your browser settings.</li>
+        </ul>
+        For more details, contact me <a href="https://github.com/FuckinClown/Gorillatag.live">here</href>
+      </p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
 </html>
-<script src="flip.js"></script>
-<title>Made by Fclown</title>
