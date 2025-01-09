@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const declineBtn = document.getElementById('decline-btn');
     const agreementContainer = document.getElementById('agreement-container');
     const mainContainer = document.getElementById('main-container');
-    const idiotAudio = document.getElementById('idiot');
+    const idiotAudio = document.getElementById('lobbyMusic');
     const wordsElement = document.getElementById('words');
 
     // so that people can't easily inspect element and see this
@@ -67,7 +67,7 @@ async function flipFace(){
     img3 = document.getElementById("image3");
     words = document.getElementById("words");
     while(true){
-        document.getElementById("idiot").play();
+        document.getElementById("lobbyMusic").play();
         img1.src = "assets/stock_woman.png"
         img2.src = "assets/stock_woman.png"
         img3.src = "assets/stock_woman.png"
