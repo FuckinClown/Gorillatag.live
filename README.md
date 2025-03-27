@@ -11,3 +11,6 @@ Has a fully functional embed system so feel free to send to your friends
 
 
 Obviously the privacy policy is fake, I do not collect or use any data, its just there to make the site seem more authentic
+
+
+**CURRENTLY OFFLINE** sorry
